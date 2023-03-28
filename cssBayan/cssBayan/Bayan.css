@@ -1,0 +1,82 @@
+/* @media only screen and (min-width: 1081px) { */
+.mems {
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  flex-wrap: wrap;
+  padding-bottom: 30%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: rgb(249, 249, 98);
+  font-family: serif;
+  font-size: xx-large;
+}
+.dropdown-contnr {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  transition: 0.4s;
+}
+.dropdown-contnr:hover .dropdown-pic {
+  display: block;
+  align-items: center;
+}
+.button {
+  background-color: rgb(115, 230, 84);
+  width: 90%;
+  color: white;
+  padding: 16px;
+  margin: 1px;
+  font-size: xx-large;
+  border: none;
+  cursor: pointer;
+
+}
+.dropdown-pic {
+  display: none;
+  /* width: 80%; */
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.button:before {
+  content: '\02795';
+  float: right;
+  margin-left: 5px;
+}
+
+.dropdown-pic img {
+  width: 60%;
+  
+}
+
+/* for mobile */
+@media only screen and (max-width: 819px) {
+  .mems {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+  .button {
+    font-size: large;
+  }
+}
+
+/* For tablet */
+@media only screen and (min-width: 820px) and (max-width: 1080px) {
+  .mems {
+    width: 100%;
+    background-color: rgb(142, 250, 113);
+  }
+  .button {
+    font-size: x-large;
+  }
+}
+
+
+
+.memsoff {
+  text-align: right;
+}
